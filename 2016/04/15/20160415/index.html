@@ -4,18 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>2016年02月03日 | 前端之路</title>
+  <title>css左右自适应布局 | 前端之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;年关将至，想写点什么以示存在，无奈之前手贱关了QQ。又不想掌自己嘴巴，就心血来潮写到博客上去，虽然有点low。&amp;#160; &amp;#160; &amp;#160; &amp;#160;先说说为什么关了QQ。&amp;#160; &amp;#160; &amp;#160; &amp;#160;我想，每个人的生命里，总会出现这样那样的人，有的主流，有的非主流。直到你遇到一个你从来没有见过的人，而他又">
+  <meta name="description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;如果有这么一个表单需求，前面是一个名称，中间是一个表单，右侧是一个按钮或者一个字符串。需要自适应布局，名称为固定长度，右侧也是固定，中间部分自适应整个width。
+先来看看html标签1234567&amp;lt;div&amp;gt;	&amp;lt;label class=&quot;name&quot;&amp;gt;年龄&amp;lt;/label&amp;gt;	&amp;lt;input type=&quot;tel">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2016年02月03日">
-<meta property="og:url" content="http://shichuanpo.github.io/2016/02/03/20160203/index.html">
+<meta property="og:title" content="css左右自适应布局">
+<meta property="og:url" content="http://shichuanpo.github.io/2016/04/15/20160415/index.html">
 <meta property="og:site_name" content="前端之路">
-<meta property="og:description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;年关将至，想写点什么以示存在，无奈之前手贱关了QQ。又不想掌自己嘴巴，就心血来潮写到博客上去，虽然有点low。&amp;#160; &amp;#160; &amp;#160; &amp;#160;先说说为什么关了QQ。&amp;#160; &amp;#160; &amp;#160; &amp;#160;我想，每个人的生命里，总会出现这样那样的人，有的主流，有的非主流。直到你遇到一个你从来没有见过的人，而他又">
-<meta property="og:updated_time" content="2016-02-04T01:26:35.342Z">
+<meta property="og:description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;如果有这么一个表单需求，前面是一个名称，中间是一个表单，右侧是一个按钮或者一个字符串。需要自适应布局，名称为固定长度，右侧也是固定，中间部分自适应整个width。
+先来看看html标签1234567&amp;lt;div&amp;gt;	&amp;lt;label class=&quot;name&quot;&amp;gt;年龄&amp;lt;/label&amp;gt;	&amp;lt;input type=&quot;tel">
+<meta property="og:updated_time" content="2016-04-15T03:28:56.309Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2016年02月03日">
-<meta name="twitter:description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;年关将至，想写点什么以示存在，无奈之前手贱关了QQ。又不想掌自己嘴巴，就心血来潮写到博客上去，虽然有点low。&amp;#160; &amp;#160; &amp;#160; &amp;#160;先说说为什么关了QQ。&amp;#160; &amp;#160; &amp;#160; &amp;#160;我想，每个人的生命里，总会出现这样那样的人，有的主流，有的非主流。直到你遇到一个你从来没有见过的人，而他又">
+<meta name="twitter:title" content="css左右自适应布局">
+<meta name="twitter:description" content="&amp;#160; &amp;#160; &amp;#160; &amp;#160;如果有这么一个表单需求，前面是一个名称，中间是一个表单，右侧是一个按钮或者一个字符串。需要自适应布局，名称为固定长度，右侧也是固定，中间部分自适应整个width。
+先来看看html标签1234567&amp;lt;div&amp;gt;	&amp;lt;label class=&quot;name&quot;&amp;gt;年龄&amp;lt;/label&amp;gt;	&amp;lt;input type=&quot;tel">
   
     <link rel="alternative" href="/atom.xml" title="前端之路" type="application/atom+xml">
   
@@ -176,11 +179,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-20160203" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-20160415" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/02/03/20160203/" class="article-date">
-  	<time datetime="2016-02-03T15:27:45.000Z" itemprop="datePublished">2016-02-03</time>
+      <a href="/2016/04/15/20160415/" class="article-date">
+  	<time datetime="2016-04-15T03:28:22.000Z" itemprop="datePublished">2016-04-15</time>
 </a>
     </div>
   
@@ -193,7 +196,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      2016年02月03日
+      css左右自适应布局
     </h1>
   
 
@@ -202,7 +205,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日记/">日记</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端知识/">前端知识</a></li></ul>
 	</div>
 
         
@@ -213,12 +216,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&#160; &#160; &#160; &#160;年关将至，想写点什么以示存在，无奈之前手贱关了QQ。又不想掌自己嘴巴，就心血来潮写到博客上去，虽然有点low。<br>&#160; &#160; &#160; &#160;先说说为什么关了QQ。<br>&#160; &#160; &#160; &#160;我想，每个人的生命里，总会出现这样那样的人，有的主流，有的非主流。直到你遇到一个你从来没有见过的人，而他又无时不刻进来你的空间。<br>&#160; &#160; &#160; &#160;于是，我跑了。</p>
-<p>&#160; &#160; &#160; &#160;早些天我跟小卢开玩笑说，这个冬天真是有点冷。<br>&#160; &#160; &#160; &#160;这两天尤甚。<br>&#160; &#160; &#160; &#160;就像回到了一年多的今天，满心哀愁，无力回天。<br>&#160; &#160; &#160; &#160;所以这个年关对我而言，只是多了几天假期，而已。</p>
-<p>&#160; &#160; &#160; &#160;周边的小店陆续关了门，该回家的回家，该过年的过年，我进去一个小超市，买了桶泡面，外加一个手拨蛋。<br>&#160; &#160; &#160; &#160;一年到头，总有几家欢乐几家愁。<br>&#160; &#160; &#160; &#160;而这几年来的自己，虽然也令自己厌恶，却着实也过的不易。<br>&#160; &#160; &#160; &#160;你想啊，好端端的，我为什么要跑，而且还是一个人死命的跑。<br>&#160; &#160; &#160; &#160;我是真的觉得无路可走，想着路上至少能让我暂且躲避一下，哪怕就一下。</p>
-<p>&#160; &#160; &#160; &#160;不过生活也不能总是绝望。<br>&#160; &#160; &#160; &#160;就像李云说的，你看你，有身高，有颜值，还有工作。多好。<br>&#160; &#160; &#160; &#160;哈。</p>
-<p>&#160; &#160; &#160; &#160;恭喜孟孟被选上，去了英格兰银行，全球最大的金融机构，没有之一。</p>
-<p>&#160; &#160; &#160; &#160;恭祝大家新年快乐。</p>
+        <p>&#160; &#160; &#160; &#160;如果有这么一个表单需求，前面是一个名称，中间是一个表单，右侧是一个按钮或者一个字符串。<br>需要自适应布局，名称为固定长度，右侧也是固定，中间部分自适应整个width。</p>
+<p>先来看看html标签<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">label</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>年龄<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"tel"</span> <span class="attribute">placeholder</span>=<span class="value">"请输入您的年龄"</span> <span class="attribute">class</span>=<span class="value">"input"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">label</span> <span class="attribute">class</span>=<span class="value">"unit"</span>&gt;</span>岁<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>首先，我想到的有这么几种display，一个是inline-block。</p>
+<p>于是css就变成这样<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;.name,.input,.unit&#123;&#10;       display:inline-block;&#10;   &#125;&#10;   .name,.unit&#123;&#10;       width: 50px;&#10;   &#125;&#10;   .input&#123;&#10;       width: 100%;&#10;       margin: 0 -54px;&#10;       overflow: hidden;&#10;   &#125;&#10;   .input input&#123;&#10;       margin:0 54px;&#10;       display:block;&#10;   &#125;</span><br></pre></td></tr></table></figure></p>
+<p>于是发现，input并不能自动撑开，即便给它加上了block。</p>
+<p>再来试试float。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#10;.name,.unit&#123;&#10;    width: 50px;&#10;&#125;&#10;.name&#123;&#10;&#9;float:left;&#10;&#125;&#10;.unit&#123;&#10;&#9;float:right;&#10;&#125;&#10;.input&#123;&#10;    overflow: hidden;&#10;&#125;&#10;.input input&#123;&#10;&#9;width:100%;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>发现还是不行，因为最后的一个.unit，会另起一行。<br>那就把html结构调整一下<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">label</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>年龄<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">label</span> <span class="attribute">class</span>=<span class="value">"unit"</span>&gt;</span>岁<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"tel"</span> <span class="attribute">placeholder</span>=<span class="value">"请输入您的年龄"</span> <span class="attribute">class</span>=<span class="value">"input"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>终于成功了，但是input的右侧边框被遮住了。<br>这个是因为input的width是100%，它的border和outline，把width撑开，其实这个时候的input的宽度为100%+4px。<br>你可以去掉边框，或者宽度设置百分之99，98等。</p>
+<blockquote>
+<p>上面有个margin:0 -54px的css，因为inline-block会有元素间距的产生，具体的可以参考张鑫旭的博客<a href="http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/" target="_blank" rel="external">关于inline-block元素间间距(张鑫旭)</a></p>
+</blockquote>
 
       
     </div>
@@ -228,18 +236,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/02/04/20160204/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          TEST
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/02/02/20160202/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">2016年02月02日</div>
+    <a href="/2016/02/04/20160204/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">TEST</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -274,7 +273,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="20160203" data-title="2016年02月03日" data-url="http://shichuanpo.github.io/2016/02/03/20160203/"></div>
+	<div class="ds-thread" data-thread-key="20160415" data-title="css左右自适应布局" data-url="http://shichuanpo.github.io/2016/04/15/20160415/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
